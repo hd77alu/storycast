@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flooding: Muregi Community Trapped In River Niger — StoryCast</title>
+  <meta name="description" content="Unprecedented flooding along the Niger River has displaced thousands. This documentary explores a community trapped by rising waters.">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="page-wrapper">
+  
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="/" class="site-logo" aria-label="StoryCast — go to homepage">
+        <span class="site-logo__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </span>
+        <span class="site-logo__text">StoryCast</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/" class="main-nav__link">Stories</a>
+        <a href="/story/main-story.html" class="main-nav__link main-nav__link--active" aria-current="page">Featured</a>
+        <a href="/about.html" class="main-nav__link">About & Access</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Mobile navigation">
+      <a href="/" class="mobile-nav__link">Stories</a>
+      <a href="/story/main-story.html" class="mobile-nav__link mobile-nav__link--active" aria-current="page">Featured</a>
+      <a href="/about.html" class="mobile-nav__link">About & Access</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="main-content">
+    
+    <article>
+      <!-- Hero -->
+      <div class="story-hero">
+        <div class="story-hero__media">
+          <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/D3AyHZQYadA" 
+            title="Flooding: Muregi, A Community Trapped In River Niger"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="story-header">
+        <div class="media-tag">
+          <span class="media-tag__type">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+            Video
+          </span>
+            <span class="media-tag__category">Flooding</span>
+        </div>
+        
+        <h1 class="story-header__title">Flooding: Muregi, A Community Trapped In River Niger</h1>
+        
+        <div class="story-header__meta">
+          <span>Channels Television</span>
+          <span class="story-header__meta-dot" aria-hidden="true"></span>
+          <span>West Africa</span>
+          <span class="story-header__meta-dot" aria-hidden="true"></span>
+          <span>October 16, 2020</span>
+        </div>
+        
+        <p class="story-header__description">
+          Video journalism by Channels Television documenting flooding along the Niger River and the Muregi community. 
+          This content is embedded from YouTube for educational purposes.
+        </p>
+      </header>
+
+      <!-- Content -->
+      <div class="story-content">
+        
+        <!-- Audio Player -->
+        <section class="story-section" aria-label="Audio player">
+          <p class="story-section__label">Audio track — listen while you read</p>
+          
+          <!-- Hidden HTML5 Audio Element -->
+          <audio id="story-audio" preload="metadata">
+            <source src="../assets/audio/flooding-niger.webm" type="audio/webm">
+            Your browser does not support the audio element.
+          </audio>
+          
+          <div class="audio-player">
+            <div class="audio-player__waveform" role="slider" aria-label="Audio playback position" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+            </div>
+            
+            <div class="audio-player__time">
+              <span id="current-time">00:00</span>
+              <span id="duration">00:00</span>
+            </div>
+            
+            <div class="audio-player__controls">
+              <button class="audio-player__button" aria-label="Skip back 10 seconds" id="skip-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg>
+              </button>
+              <button class="audio-player__button audio-player__button--play" aria-label="Play" id="play-pause">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <button class="audio-player__button" aria-label="Skip forward 10 seconds" id="skip-forward">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+              </button>
+              <div class="audio-player__secondary">
+                <button class="audio-player__button" aria-label="Mute" id="mute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                </button>
+                <a href="../assets/audio/flooding-niger.webm" download class="audio-player__download" aria-label="Download audio file">Download</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Transcript -->
+  <section class="story-section" aria-labelledby="transcript-heading">
+          <h2 id="transcript-heading" class="story-section__title">Transcript</h2>
+          <p class="story-section__subtitle">Download the full transcript with timestamps</p>
+          
+          <div class="transcript">
+            <a href="../assets/transcripts/flooding-niger.txt" download class="btn btn--ghost">
+              Download Full Transcript
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+        </section>>
+
+        <!-- Related Stories -->
+        <section class="related-stories" aria-labelledby="related-heading">
+          <div class="related-stories__header">
+            <h2 id="related-heading" class="related-stories__title">Related Stories</h2>
+            <div class="related-stories__divider" aria-hidden="true"></div>
+          </div>
+          
+          <div class="related-stories__grid">
+            
+            <article class="related-stories__card">
+              <a href="/story/flooding-niger.html">
+                <div class="media-tag">
+                  <span class="media-tag__type">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                    Audio
+                  </span>
+                  <span class="media-tag__category">Flooding</span>
+                </div>
+                <h3 class="related-stories__title-small">When the Niger Overflows: Voices from the Riverbanks</h3>
+                <p class="related-stories__meta">West Africa · 24:15</p>
+              </a>
+            </article>
+            
+            <article class="related-stories__card">
+              <a href="/story/seeds-malawi.html">
+                <div class="media-tag">
+                  <span class="media-tag__type">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+                    Video
+                  </span>
+                  <span class="media-tag__category">Resilience</span>
+                </div>
+                <h3 class="related-stories__title-small">Seeds of Memory: How Malawian Women Are Saving Ancient Crops</h3>
+                <p class="related-stories__meta">Southern Africa · 31:07</p>
+              </a>
+            </article>
+            
+          </div>
+        </section>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-brand__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </span>
+        <div>
+          <p class="footer-brand__text">StoryCast</p>
+          <p class="footer-brand__tagline">Climate Stories from Africa</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/" class="footer-nav__link">Stories</a>
+        <a href="/story/main-story.html" class="footer-nav__link">Featured</a>
+        <a href="/about.html" class="footer-nav__link">About & Access</a>
+      </nav>
+      <p class="footer-copyright">Educational project - 2026. Videos embedded from YouTube with full attribution to original creators.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

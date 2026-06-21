@@ -1,0 +1,26 @@
+// Typography Tokens
+$font-serif: 'Playfair Display', serif;
+$font-sans: 'Figtree', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-mono: 'DM Mono', 'Courier New', monospace;
+
+// Font sizes
+$text-xs: 0.625rem; // 10px
+$text-sm: 0.875rem; // 14px
+$text-base: 1rem; // 16px
+$text-lg: 1.125rem; // 18px
+$text-xl: 1.25rem; // 20px
+$text-2xl: clamp(2.4rem, 6vw, 4.5rem);
+$text-3xl: 1.875rem; // 30px
+$text-4xl: 2.25rem; // 36px
+
+// Font weights
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Line heights
+$leading-tight: 1.05;
+$leading-snug: 1.2;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;

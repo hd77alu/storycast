@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Access — StoryCast</title>
+  <meta name="description" content="StoryCast is an independent audio and video journalism platform documenting climate change across Africa. Learn about our mission and accessibility features.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-wrapper">
+  
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="/" class="site-logo" aria-label="StoryCast — go to homepage">
+        <span class="site-logo__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </span>
+        <span class="site-logo__text">StoryCast</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/" class="main-nav__link">Stories</a>
+        <a href="/story/main-story.html" class="main-nav__link">Featured</a>
+        <a href="/about.html" class="main-nav__link main-nav__link--active" aria-current="page">About & Access</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Mobile navigation">
+      <a href="/" class="mobile-nav__link">Stories</a>
+      <a href="/story/main-story.html" class="mobile-nav__link">Featured</a>
+      <a href="/about.html" class="mobile-nav__link mobile-nav__link--active" aria-current="page">About & Access</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="main-content">
+    
+    <!-- Hero -->
+    <section class="about-hero" aria-label="About StoryCast">
+      <div class="about-hero__background" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1603703182693-51a19941fa59?w=1400&h=700&fit=crop&auto=format" alt="">
+        <div class="about-hero__gradient"></div>
+      </div>
+      
+      <div class="about-hero__content">
+        <p class="about-hero__label">Our Mission</p>
+        <h1 class="about-hero__title">Stories That<br>Must Be Heard</h1>
+        <p class="about-hero__description">
+          Together, we can amplify the voices of those on the frontlines of climate change in Africa.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission" aria-labelledby="mission-heading">
+      <div class="mission__grid">
+        <div>
+          <p class="mission__label">Why StoryCast</p>
+          <h2 id="mission-heading" class="mission__title">The Power of Storytelling</h2>
+        </div>
+        <div>
+          <p class="mission__text">
+            This is a web platform that displays powerful stories from numerous organizations covering climate change in Africa.
+          </p>
+          <p class="mission__text">
+            All videos are embedded directly from YouTube and remain the property of their original creators: NBC News, ABC News, Channels Television, and Switch TV. 
+          </p>
+          <p class="mission__text">
+            The design emphasizes accessibility (WCAG 2.1 AA compliance), responsive layouts, container queries, and semantic markup. 
+            No content is hosted on this platform - all media is streamed from YouTube.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">
+      <hr>
+    </div>
+
+    <!-- Accessibility Features -->
+    <section class="features" aria-labelledby="access-heading">
+      <div class="features__header">
+        <p class="features__label">Access</p>
+        <h2 id="access-heading" class="features__title">Designed for Everyone</h2>
+        <p class="features__description">
+          Accessibility is not a feature layer. It is a design constraint applied from the first line of markup.
+        </p>
+      </div>
+
+      <div class="features__grid">
+        
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Audio</h3>
+          <p class="feature-card__description">
+            Audio files for all the videos are available and fully accessible for all users.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="feature-card__title">Videos</h3>
+          <p class="feature-card__description">
+            All videos are embedded directly from YouTube. No content is downloaded or hosted on this platform.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/></svg>
+          </div>
+          <h3 class="feature-card__title">Keyboard Navigation</h3>
+          <p class="feature-card__description">
+            The entire site is navigable by keyboard. Audio players respond to arrow keys for scrubbing, space to play and pause.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3 class="feature-card__title">Transcripts</h3>
+          <p class="feature-card__description">
+            Stories are published with full transcripts including timestamps for accessibility.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          </div>
+          <h3 class="feature-card__title">Inclusive Design</h3>
+          <p class="feature-card__description">
+            Interactive elements with semantic structure, designed to meet WCAG AA contrast throughout. 
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 8-9.04 9.06a2.82 2.82 0 1 0 3.98 3.98L16 12"/><circle cx="17" cy="7" r="5"/></svg>
+          </div>
+          <h3 class="feature-card__title">Screen Readers</h3>
+          <p class="feature-card__description">
+            ARIA landmarks, live regions, and descriptive labels are applied throughout.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-brand__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </span>
+        <div>
+          <p class="footer-brand__text">StoryCast</p>
+          <p class="footer-brand__tagline">Climate Stories from Africa</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/" class="footer-nav__link">Stories</a>
+        <a href="/story/main-story.html" class="footer-nav__link">Featured</a>
+        <a href="/about.html" class="footer-nav__link">About & Access</a>
+      </nav>
+      <p class="footer-copyright">Educational project - 2026. Videos embedded from YouTube with full attribution to original creators.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

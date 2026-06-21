@@ -1,0 +1,38 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+@use '../tokens/spacing' as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-3;
+  padding: $space-3 $space-6;
+  font-family: $font-mono;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s;
+  
+  &--primary {
+    background-color: $color-primary;
+    color: $color-primary-foreground;
+    
+    &:hover, &:focus {
+      background-color: #d4733e;
+      color: $color-primary-foreground;
+    }
+  }
+  
+  &--ghost {
+    color: $color-accent;
+    
+    &:hover, &:focus {
+      color: $color-foreground;
+    }
+  }
+  
+  svg {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}

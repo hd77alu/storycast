@@ -1,0 +1,86 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+@use '../tokens/spacing' as *;
+
+.site-footer {
+  border-top: 1px solid $color-border;
+  padding: $space-12 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+  
+  @media (min-width: $bp-md) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    svg {
+      width: 0.75rem;
+      height: 0.75rem;
+      color: $color-primary-foreground;
+    }
+  }
+  
+  &__text {
+    font-family: $font-serif;
+    font-weight: $weight-semibold;
+    color: $color-foreground;
+  }
+  
+  &__tagline {
+    font-family: $font-mono;
+    font-size: 0.563rem;
+    color: rgba(240, 235, 225, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-8;
+  
+  &__link {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(240, 235, 225, 0.35);
+    transition: color 0.2s;
+    
+    &:hover, &:focus {
+      color: $color-foreground;
+    }
+  }
+}
+
+.footer-copyright {
+  font-family: $font-mono;
+  font-size: 0.563rem;
+  color: rgba(240, 235, 225, 0.25);
+  letter-spacing: 0.02em;
+}

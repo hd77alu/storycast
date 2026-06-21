@@ -1,0 +1,142 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+@use '../tokens/spacing' as *;
+
+.story-card {
+  background-color: $color-background;
+  container-type: inline-size;
+  container-name: story-card;
+  
+  &__link {
+    display: block;
+    
+    &:focus-visible {
+      outline: 2px solid $color-accent;
+      outline-offset: -2px;
+    }
+  }
+  
+  &__media {
+    position: relative;
+    aspect-ratio: 16/9;
+    background-color: $color-card;
+    overflow: hidden;
+  }
+  
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.65;
+    transition: opacity 0.5s, transform 0.5s;
+    
+    .story-card__link:hover & {
+      opacity: 0.85;
+      transform: scale(1.04);
+    }
+  }
+  
+  &__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(12, 14, 13, 0.7), transparent);
+    pointer-events: none;
+  }
+  
+  &__duration {
+    position: absolute;
+    bottom: $space-3;
+    right: $space-3;
+    font-family: $font-mono;
+    font-size: $text-xs;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: $space-1 $space-2;
+    backdrop-filter: blur(4px);
+  }
+  
+  &__tags {
+    position: absolute;
+    top: $space-3;
+    left: $space-3;
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+  }
+  
+  &__content {
+    padding: $space-6;
+  }
+  
+  &__region {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(240, 235, 225, 0.38);
+    margin-bottom: $space-2;
+  }
+  
+  &__title {
+    font-family: $font-serif;
+    font-size: 1.2rem;
+    line-height: $leading-snug;
+    color: $color-foreground;
+    margin-bottom: $space-3;
+    transition: color 0.2s;
+    
+    .story-card__link:hover & {
+      color: $color-accent;
+    }
+  }
+  
+  &__description {
+    color: rgba(240, 235, 225, 0.52);
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+    margin-bottom: $space-4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__byline {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    color: rgba(240, 235, 225, 0.32);
+  }
+  
+  &__arrow {
+    color: $color-primary;
+    transition: transform 0.2s;
+    
+    .story-card__link:hover & {
+      transform: translateX(4px);
+    }
+    
+    svg {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+}
+
+// Container query adaptation
+@container story-card (min-width: 500px) {
+  .story-card {
+    &__title {
+      font-size: 1.4rem;
+    }
+    
+    &__description {
+      -webkit-line-clamp: 3;
+    }
+  }
+}

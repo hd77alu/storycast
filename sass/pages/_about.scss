@@ -1,0 +1,192 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+@use '../tokens/spacing' as *;
+
+.about-hero {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: $space-24;
+  
+  &__background {
+    position: absolute;
+    inset: 0;
+    background-color: $color-background;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.18;
+    }
+  }
+  
+  &__gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(12, 14, 13, 0.4), $color-background);
+  }
+  
+  &__content {
+    position: relative;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+  }
+  
+  &__label {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: $color-accent;
+    margin-bottom: $space-4;
+  }
+  
+  &__title {
+    font-family: $font-serif;
+    font-size: clamp(2.6rem, 7vw, 5rem);
+    font-weight: $weight-semibold;
+    line-height: 1.03;
+    color: $color-foreground;
+    margin-bottom: $space-8;
+  }
+  
+  &__description {
+    color: rgba(240, 235, 225, 0.65);
+    font-size: $text-xl;
+    line-height: $leading-relaxed;
+    max-width: 48rem;
+  }
+}
+
+.mission {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: $space-20 $container-padding;
+  
+  &__grid {
+    display: grid;
+    gap: $space-12;
+    
+    @media (min-width: $bp-md) {
+      grid-template-columns: 12.5rem 1fr;
+    }
+  }
+  
+  &__label {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: $color-accent;
+    margin-bottom: $space-2;
+  }
+  
+  &__title {
+    font-family: $font-serif;
+    font-size: $text-3xl;
+    font-weight: $weight-semibold;
+    color: $color-foreground;
+  }
+  
+  &__text {
+    color: rgba(240, 235, 225, 0.65);
+    line-height: $leading-relaxed;
+    margin-bottom: $space-5;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.features {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: $space-20 $container-padding;
+  
+  &__header {
+    margin-bottom: $space-12;
+  }
+  
+  &__label {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: $color-accent;
+    margin-bottom: $space-2;
+  }
+  
+  &__title {
+    font-family: $font-serif;
+    font-size: $text-4xl;
+    font-weight: $weight-semibold;
+    color: $color-foreground;
+  }
+  
+  &__description {
+    color: rgba(240, 235, 225, 0.52);
+    line-height: $leading-relaxed;
+    margin-top: $space-4;
+    max-width: 32rem;
+  }
+  
+  &__grid {
+    display: grid;
+    gap: 1px;
+    background-color: $color-border;
+    
+    @media (min-width: $bp-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $bp-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.feature-card {
+  background-color: $color-background;
+  padding: $space-8;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: $color-card;
+  }
+  
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(196, 98, 45, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary;
+    margin-bottom: $space-5;
+    transition: background-color 0.2s;
+    
+    .feature-card:hover & {
+      background-color: rgba(196, 98, 45, 0.22);
+    }
+    
+    svg {
+      width: 1.063rem;
+      height: 1.063rem;
+    }
+  }
+  
+  &__title {
+    font-family: $font-serif;
+    font-size: $text-lg;
+    color: $color-foreground;
+    margin-bottom: $space-2;
+  }
+  
+  &__description {
+    color: rgba(240, 235, 225, 0.52);
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+  }
+}

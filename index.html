@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryCast — Climate Stories from Africa</title>
+  <meta name="description" content="Independent audio and video journalism documenting climate change across Africa. Told by African reporters, from African communities.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-wrapper">
+  
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="/" class="site-logo" aria-label="StoryCast — go to homepage">
+        <span class="site-logo__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </span>
+        <span class="site-logo__text">StoryCast</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/" class="main-nav__link main-nav__link--active" aria-current="page">Stories</a>
+        <a href="/story/main-story.html" class="main-nav__link">Featured</a>
+        <a href="/about.html" class="main-nav__link">About & Access</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y6="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Mobile navigation">
+      <a href="/" class="mobile-nav__link mobile-nav__link--active" aria-current="page">Stories</a>
+      <a href="/story/main-story.html" class="mobile-nav__link">Featured</a>
+      <a href="/about.html" class="mobile-nav__link">About & Access</a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Featured story">
+      <div class="hero__background" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600&h=900&fit=crop&auto=format" alt="">
+        <div class="hero__gradient"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__inner">
+          <p class="hero__label">Main Story</p>
+          <p class="hero__title">Scorched: East Africa's Climate Crisis</p>
+          <p class="hero__description">
+            East Africa is ground zero for climate change. Community leaders in northern Kenya tell NBC News Chief International Correspondent Keir Simmons that fertile lands just a decade ago now look like desert. Conflict around the world is also driving food insecurity. “Scorched: East Africa’s Climate Crisis” looks at the global forces at play and asks how we can address these issues. 
+            Video by NBC News.
+          </p>
+          <div class="hero__actions">
+            <a href="/story/main-story.html" class="btn btn--primary" aria-label="Watch: The Last Harvest — 18 minutes 42 seconds">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+              <span>Watch Story</span>
+              <span aria-hidden="true">25:47</span>
+            </a>
+            <div class="hero__meta" aria-label="Reported by NBC News, East Africa">
+              <span>Reported by NBC News</span>
+              <span class="hero__meta-dot" aria-hidden="true"></span>
+              <span>East Africa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Explore</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Stories Grid -->
+    <section class="section" aria-labelledby="dispatches-heading">
+      <div class="section__header">
+        <div>
+          <p class="section__label">Reports</p>
+          <h2 id="dispatches-heading" class="section__title">Climate Stories</h2>
+        </div>
+        <p class="section__meta">more stories</p>
+      </div>
+
+      <div class="stories-grid">
+        
+        <article class="story-card">
+          <a href="/story/flooding-niger.html" class="story-card__link" aria-label="Listen to: When the Niger Overflows">
+            <div class="story-card__media">
+              <img src="https://images.unsplash.com/photo-1705915833602-3dab5b678931?w=700&h=420&fit=crop&auto=format" alt="Flooding along the Niger River" class="story-card__image">
+              <div class="story-card__gradient" aria-hidden="true"></div>
+              <span class="story-card__duration" aria-label="Duration: 2 minutes 54 seconds">2:54</span>
+              <div class="story-card__tags">
+                <div class="media-tag">
+                  <span class="media-tag__type">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                    Audio
+                  </span>
+                  <span class="media-tag__category">Flooding</span>
+                </div>
+              </div>
+            </div>
+            <div class="story-card__content">
+              <p class="story-card__region">West Africa</p>
+              <h3 class="story-card__title">When the Niger Overflows: Voices from the Riverbanks</h3>
+              <p class="story-card__description">
+                Video journalism documenting unprecedented flooding along the Niger River and its impact on local communities. By Channels Television.
+              </p>
+              <div class="story-card__footer">
+                <span class="story-card__byline">Channels Television, 2020</span>
+                <span class="story-card__arrow" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="/story/seeds-malawi.html" class="story-card__link" aria-label="Watch: Seeds of Memory">
+            <div class="story-card__media">
+              <img src="https://images.unsplash.com/photo-1515657834497-26509e295154?w=700&h=420&fit=crop&auto=format" alt="Malawian women preserving heirloom seeds" class="story-card__image">
+              <div class="story-card__gradient" aria-hidden="true"></div>
+              <span class="story-card__duration" aria-label="Duration: 34 minutes 14 seconds">34:14</span>
+              <div class="story-card__tags">
+                <div class="media-tag">
+                  <span class="media-tag__type">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+                    Video
+                  </span>
+                  <span class="media-tag__category">Resilience</span>
+                </div>
+              </div>
+            </div>
+            <div class="story-card__content">
+              <p class="story-card__region">Southern Africa</p>
+              <h3 class="story-card__title">Seeds of Memory: How Malawian Women Are Saving Ancient Crops</h3>
+              <p class="story-card__description">
+                Documentary on climate-smart agricultural practices and smallholder farmers building resilience. By Switch TV.
+              </p>
+              <div class="story-card__footer">
+                <span class="story-card__byline">Switch TV, 2022</span>
+                <span class="story-card__arrow" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="story-card">
+          <a href="/story/famine-east-africa.html" class="story-card__link" aria-label="Watch: Millions Face Famine">
+            <div class="story-card__media">
+              <img src="https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?w=700&h=420&fit=crop&auto=format" alt="Humanitarian crisis in East Africa" class="story-card__image">
+              <div class="story-card__gradient" aria-hidden="true"></div>
+              <span class="story-card__duration" aria-label="Duration: 9 minutes 25 seconds">9:25</span>
+              <div class="story-card__tags">
+                <div class="media-tag">
+                  <span class="media-tag__type">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert-icon lucide-shield-alert"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                    Video
+                  </span>
+                  <span class="media-tag__category">Famine</span>
+                </div>
+              </div>
+            </div>
+            <div class="story-card__content">
+              <p class="story-card__region">East Africa</p>
+              <h3 class="story-card__title">Millions in East Africa Face Famine Triggered by Drought</h3>
+              <p class="story-card__description">
+                News report on millions facing severe food insecurity as prolonged drought triggers humanitarian crisis. By ABC News.
+              </p>
+              <div class="story-card__footer">
+                <span class="story-card__byline">ABC News, 2022</span>
+                <span class="story-card__arrow" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Audio Spotlight -->
+    <section class="audio-spotlight" aria-labelledby="audio-section-heading">
+      <div class="audio-spotlight__container">
+        <div>
+          <p class="audio-spotlight__label">About This Platform</p>
+          <h2 id="audio-section-heading" class="audio-spotlight__title">Our Mission</h2>
+          <p class="audio-spotlight__text">
+            This platform curates video journalism from news organizations documenting climate change across Africa. 
+            All content is used for educational purposes, with full attribution to original creators.
+          </p>
+          <p class="audio-spotlight__text">
+            Videos are embedded directly from YouTube. We do not host or own this content.
+          </p>
+          <a href="/about.html" class="btn btn--ghost">
+            About our access features
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div>
+          <!-- Hidden HTML5 Audio Element -->
+          <audio id="story-audio" preload="metadata">
+            <source src="assets/audio/seeds-malawi.webm" type="audio/webm">
+            Your browser does not support the audio element.
+          </audio>
+          
+          <div class="audio-player">
+            <div class="audio-player__header">
+              <div class="media-tag">
+                <span class="media-tag__type">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                  Audio
+                </span>
+                <span class="media-tag__category">Resilience</span>
+              </div>
+              <span id="duration">00:00</span>
+            </div>
+            <div class="audio-player__waveform" role="slider" aria-label="Audio playback position" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+              <div class="audio-player__bar"></div>
+            </div>
+            <div class="audio-player__time">
+              <span id="current-time">00:00</span>
+              <span id="duration-bottom">00:00</span>
+            </div>
+            <div class="audio-player__controls">
+              <button class="audio-player__button" aria-label="Skip back 10 seconds" id="skip-back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg>
+              </button>
+              <button class="audio-player__button audio-player__button--play" aria-label="Play" id="play-pause">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <button class="audio-player__button" aria-label="Skip forward 10 seconds" id="skip-forward">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+              </button>
+              <div class="audio-player__secondary">
+                <button class="audio-player__button" aria-label="Mute" id="mute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="audio-spotlight__caption">Preview — Seeds of Memory</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessibility Features -->
+    <section class="stats" aria-label="Accessibility features">
+      <div class="stats__container">
+        <dl class="stats__grid">
+          <div class="stats__item">
+            <dt class="stats__label">Semantic Elements</dt>
+            <dd class="stats__value">100%</dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__label">Transcripts</dt>
+            <dd class="stats__value">100%</dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__label">Keyboard Navigation</dt>
+            <dd class="stats__value">100%</dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__label">Screen Reader Compatible</dt>
+            <dd class="stats__value">100%</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-brand__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </span>
+        <div>
+          <p class="footer-brand__text">StoryCast</p>
+          <p class="footer-brand__tagline">Climate Stories from Africa</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/" class="footer-nav__link">Stories</a>
+        <a href="/story/main-story.html" class="footer-nav__link">Featured</a>
+        <a href="/about.html" class="footer-nav__link">About & Access</a>
+      </nav>
+      <p class="footer-copyright">Educational project - 2026. Videos embedded from YouTube with full attribution to original creators.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

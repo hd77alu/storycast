@@ -1,0 +1,134 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+@use '../tokens/spacing' as *;
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: rgba(12, 14, 13, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-border;
+}
+
+.header-container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  transition: opacity 0.2s;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    svg {
+      width: 0.8rem;
+      height: 0.8rem;
+      color: $color-primary-foreground;
+    }
+  }
+  
+  &__text {
+    font-family: $font-serif;
+    font-size: $text-lg;
+    font-weight: $weight-semibold;
+    color: $color-foreground;
+  }
+}
+
+.main-nav {
+  display: none;
+  
+  @media (min-width: $bp-md) {
+    display: flex;
+    align-items: center;
+    gap: $space-8;
+  }
+  
+  &__link {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(240, 235, 225, 0.5);
+    transition: color 0.2s;
+    
+    &:hover, &:focus {
+      color: $color-foreground;
+    }
+    
+    &--active {
+      color: $color-accent;
+    }
+  }
+}
+
+.mobile-menu-toggle {
+  display: flex;
+  padding: $space-1;
+  color: rgba(240, 235, 225, 0.6);
+  
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+  
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  &:hover, &:focus {
+    color: $color-foreground;
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: $space-5;
+  padding: $space-5 $container-padding;
+  background-color: $color-background;
+  border-top: 1px solid $color-border;
+  
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+  
+  &__link {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(240, 235, 225, 0.5);
+    text-align: left;
+    
+    &--active {
+      color: $color-accent;
+    }
+  }
+  
+  &[hidden] {
+    display: none;
+  }
+}
