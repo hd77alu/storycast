@@ -2,6 +2,7 @@
 
 A website showcasing stories documenting climate change impacts across Africa. The site features three main pages with full accessibility support, responsive design, and container queries.
 
+- **Access the deployed Website from [here](https://hd77alu.github.io/storycast/)**
 
 ## Project Structure
 
